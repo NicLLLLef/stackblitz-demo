@@ -1,0 +1,13 @@
+{
+  "name": "stackblitz-demo",
+  "version": "1.0.0",
+  "description": "Simple StackBlitz demo project",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "dependencies": {
+    "@stackblitz/sdk": "^1.9.0",
+    "serve": "^14.2.1"
+  }
+}
