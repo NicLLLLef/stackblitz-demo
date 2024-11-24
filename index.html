@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StackBlitz Demo</title>
+    <style>
+        body { margin: 0; }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <div id="embed"></div>
-    <script src="https://unpkg.com/@stackblitz/sdk@1/bundles/sdk.umd.js"></script>
-    <script>
-        StackBlitz.embedProjectId(
-            'embed',
-            'angular',
-            {
-                forceEmbedLayout: true,
-                openFile: 'src/app/app.component.ts'
-            }
-        );
-    </script>
+    <iframe 
+        src="https://stackblitz.com/edit/js-8qwkfg?embed=1&file=index.js" 
+        frameborder="0">
+    </iframe>
 </body>
 </html>
