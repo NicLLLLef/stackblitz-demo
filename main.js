@@ -1,7 +1,5 @@
-import sdk from '@stackblitz/sdk';
-
 // Create a new project
-sdk.embedProject('myDiv', {
+StackBlitz.embedProject('myDiv', {
   files: {
     'index.html': `
 <!DOCTYPE html>
