@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StackBlitz Demo</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-        }
-        #myDiv {
-            width: 100%;
-            height: 800px;
-            border: none;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-    </style>
-    <script src="https://unpkg.com/@stackblitz/sdk/bundles/sdk.umd.js"></script>
 </head>
 <body>
-    <div id="myDiv"></div>
-    <script src="./main.js"></script>
+    <div id="embed"></div>
+    <script src="https://unpkg.com/@stackblitz/sdk@1/bundles/sdk.umd.js"></script>
+    <script>
+        StackBlitz.embedProjectId(
+            'embed',
+            'angular',
+            {
+                forceEmbedLayout: true,
+                openFile: 'src/app/app.component.ts'
+            }
+        );
+    </script>
 </body>
 </html>
